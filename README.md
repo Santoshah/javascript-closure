@@ -1,2 +1,1 @@
-# $http service to get HTML using filter | AngularJS
-
+# In JavaScript, if you use the function keyword inside another function, you are creating a closure.
