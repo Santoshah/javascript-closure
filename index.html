@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Javasciprt Closure eg1</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
+
+	<!-- <script src="js/script.js"></script> -->
+<script type="text/javascript">
+
+
+var getLogNumber, getIncrementLogNumber, setLogNumber;
+
+function globalNumber(){
+
+	var num = 1;
+
+	getLogNumber = function(){ console.log(num)}
+	getIncrementLogNumber = function() { num++ }
+	setLogNumber = function(x) { num = x }
+}
+globalNumber();
+setLogNumber(5);
+getIncrementLogNumber();
+getLogNumber();
+
+
+globalNumber();
+getLogNumber();
+
+
+</script>
+
+</head>
+<body ng-app="myModule" ng-controller="myController">
+
+See console log for result.
+
+</body>
+</html>
